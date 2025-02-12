@@ -1,0 +1,50 @@
+/* IMPORTACION FONT */
+@font-face {
+    font-family: 'font';
+    src: url(./../assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+body{
+    margin: 0 auto;
+    background-image: url(./../assets/images/background-desktop.png);
+    font-family: 'font';
+    color: white;
+}
+/* HEADER */
+.img__header{
+    width: 300px;
+}
+/* MAIN */
+.title__main{
+    font-size: 4rem;
+}
+.text__main{
+    font-size: 2rem;
+}
+/* FORM */
+.form__main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.cont__form-file {
+    display: flex;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    height: 150px;
+    width: 400px;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.input__file-form{
+    display: none;
+}
+.img__file{
+    background-color: gray;
+    opacity: 0.1    ;
+    border-radius: 0.5rem;
+    padding: 10px;
+}
