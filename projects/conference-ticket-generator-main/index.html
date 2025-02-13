@@ -16,60 +16,68 @@
   </style>
 </head>
 <body>
-  <header class="header">
-    <img src="./assets/images/logo-full.svg" alt="" class="img__header">
-  </header>
-  <main class="container">
-    <!-- Form starts -->
-    <h2 class="title__main">Your Journey to Coding Conf 2025 Starts Here!</h2>
+  <div class="container">
+    <header class="header">
+      <img src="./assets/images/logo-full.svg" alt="" class="img__header">
+    </header>
+    <main class="container">
+      <!-- Form starts -->
+      <h2 class="title__main">Your Journey to Coding Conf 2025 Starts Here!</h2>
     
-    <p class="text__main">Secure your spot at next year's biggest coding conference.</p>
+      <p class="text__main">Secure your spot at next year's biggest coding conference.</p>
     
-    <!-- FORMULARIO -->
-    <form action="" class="form__main">
-      <!-- IMAGE -->
-      <div class="cont__form-file">
-        <label for="images" class="label__form">
-          <img src="./assets/images/icon-upload.svg" alt="" class="img__file">
-          <p>Drag and drop or click upload</p>
-        </label>
-        <input type="file" name="images" id="images" class="input__file-form" accept="image/png, image/jpeg">
-      </div>
-      <!-- NAME -->
-      <div class="cont__form-main">
-        <label for="" class="label__form">Full Name</label>
-        <input type="text" class="input__form">
-      </div>
-      <!-- EMAIL -->
-      <div class="cont__form-main">
-        <label for="" class="label__form">Email Address</label>
-        <input type="email" class="input__form" placeholder="example@email.com">
-      </div>
-      <!-- GITHUB -->
-      <div class="cont__form-main">
-        <label for="" class="label__form">GitHub Username</label>
-        <input type="text" class="input__form" placeholder="@yourusername">
-      </div>
-      <!-- BUTTON -->
-      <button type="submit" class="button__form">Generate My Ticket</button>
-    </form>
-    <!-- Form ends -->
-    
-    <!-- Generated tickets starts -->
-    
-    Congrats, <!-- Full Name -->! Your ticket is ready.
-    
-    We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-    
-    Coding Conf
-    Jan 31, 2025 / Austin, TX
-    
-    <!-- Generated tickets ends -->
-    
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </main>
+      <!-- FORMULARIO -->
+      <form action="" class="form__main">
+        <!-- IMAGE -->
+        <div class="cont__form-file">
+          <label for="images" class="label__form">
+            <img src="./assets/images/icon-upload.svg" alt="" class="img__file">
+            <p>Drag and drop or click upload</p>
+          </label>
+          <input type="file" name="images" id="images" class="input__file-form" accept="image/png, image/jpeg">
+        </div>
+        <!-- NAME -->
+        <div class="cont__form-main">
+          <label for="" class="label__form">Full Name</label>
+          <input type="text" class="input__form">
+        </div>
+        <!-- EMAIL -->
+        <div class="cont__form-main">
+          <label for="" class="label__form">Email Address</label>
+          <input type="email" class="input__form" placeholder="example@email.com">
+        </div>
+        <!-- GITHUB -->
+        <div class="cont__form-main">
+          <label for="" class="label__form">GitHub Username</label>
+          <input type="text" class="input__form" placeholder="@yourusername">
+        </div>
+        <!-- BUTTON -->
+        <button type="submit" class="button__form">Generate My Ticket</button>
+      </form>
+      </main>
+      <!-- MOSTRAR CUANDO EL TICKET ESTE HECHO -->
+      <main class="container">
+        <!-- Form starts -->
+        <h2 class="title__main">Congrats, <span id="name"></span> Your ticket is ready.</h2>
+        
+        <p class="text__main">We've emailed your ticket to <span id="mail"></span> and will send updates in the run up to the event</p>
+        
+        <!-- We've emailed your ticket to Email Address and will send updates in the run up to the event. -->
+        <div class="cont__ticket">
+          <div class="title__cont-ticket">
+            <img src="./assets/images/logo-full.svg" alt="" class="img__header">
+            <p>Jan 31, 2025 / Austin, TX</p>
+          </div>
+          <div class="content__cont-tocket"></div>
+        </div>
+  
+        
+        <!-- <div class="attribution">
+              Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+              Coded by <a href="#">Your Name Here</a>.
+            </div> -->
+      </main>
+  </div>
+  <script src="./js/script.js"></script>
 </body>
 </html>
